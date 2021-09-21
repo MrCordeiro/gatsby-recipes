@@ -8,39 +8,33 @@ const Contact = () => {
         <main className="page">
           <section className="contact-page">
             <article className="contact-info">
-              <h3>Want to get in touch?</h3>
+              <h3>Quer falar conosco?</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                illum nihil eveniet explicabo commodi nostrum impedit sit rem,
-                maiores voluptas eos possimus officiis perferendis nam itaque
-                blanditiis exercitationem quasi ad!
+                Você está com dúvidas em relação a alguma receita? Tem ideias para partilhar?
               </p>
               <p>
-                Chuck shank tri-tip turkey andouille prosciutto tongue leberkas.
-                Ground round buffalo andouille kielbasa.
+                Então nos envie uma mensagem!
               </p>
               <p>
-                Prosciutto drumstick spare ribs jowl ham fatback shank shoulder
-                tenderloin ball tip bresaola frankfurter pork loin beef. Ham
-                andouille t-bone boudin, bacon pork loin short loin leberkas.
+                Lemos todos os emails com muito carinho e atenção!
               </p>
             </article>
             <article>
               <form className="form contact-form">
                 <div className="form-row">
-                  <label htmlFor="name">your name</label>
+                  <label htmlFor="name">seu nome</label>
                   <input type="text" name="name" id="name" />
                 </div>
                 <div className="form-row">
-                  <label htmlFor="email">your email</label>
+                  <label htmlFor="email">seu email</label>
                   <input type="email" name="email" id="email" />
                 </div>
                 <div className="form-row">
-                  <label htmlFor="message">message</label>
+                  <label htmlFor="message">messagem</label>
                   <textarea name="message" id="message"></textarea>
                 </div>
                 <button type="submit" className="btn btn-block">
-                  submit
+                  enviar
                 </button>
               </form>
             </article>

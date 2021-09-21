@@ -406,6 +406,7 @@ form > *:last-child {
   .nav-header {
     padding: 0;
     margin-right: 2rem;
+    margin-left: 2rem;
     height: auto;
   }
 
