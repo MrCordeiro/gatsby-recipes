@@ -1,0 +1,35 @@
+{
+  "editor.wordWrap": "on",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.minimap.enabled": false,
+  "prettier.jsxSingleQuote": false,
+  "prettier.semi": true,
+  "prettier.singleQuote": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.cursorBlinking": "expand",
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#fc73d8",
+    "activityBar.activeBorder": "#cbfb44",
+    "activityBar.background": "#fc73d8",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#cbfb44",
+    "activityBarBadge.foreground": "#15202b",
+    "statusBar.background": "#fb41ca",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#fa0fbc",
+    "titleBar.activeBackground": "#fb41ca",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#fb41ca99",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
+  "peacock.color": "#fb41ca"
+}
