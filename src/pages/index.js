@@ -1,4 +1,5 @@
 import React from "react"
+import Gallery from "../components/Gallery"
 import Layout from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -22,6 +23,7 @@ export default function Home() {
               </div>
             </div>
           </header>
+          <Gallery/>
         </main>
       </Layout>
     </>
