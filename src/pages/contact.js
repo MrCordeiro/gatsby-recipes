@@ -1,7 +1,10 @@
-import React from "react"
-import Layout from "../components/Layout"
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import RecipesList from "../components/RecipesList";
 
-const Contact = () => {
+const Contact = ({ data }) => {
+  const recipes = data.allContentfulRecipe.nodes;
   return (
     <>
       <Layout>
@@ -10,14 +13,11 @@ const Contact = () => {
             <article className="contact-info">
               <h3>Quer falar conosco?</h3>
               <p>
-                Você está com dúvidas em relação a alguma receita? Tem ideias para partilhar?
+                Você está com dúvidas em relação a alguma receita? Tem ideias
+                para partilhar?
               </p>
-              <p>
-                Então nos envie uma mensagem!
-              </p>
-              <p>
-                Lemos todos os emails com muito carinho e atenção!
-              </p>
+              <p>Então nos envie uma mensagem!</p>
+              <p>Lemos todos os emails com muito carinho e atenção!</p>
             </article>
             <article>
               <form className="form contact-form">
@@ -39,10 +39,33 @@ const Contact = () => {
               </form>
             </article>
           </section>
+          <section className="featured-recipes">
+            <h5>Look at this Awesomesouce!</h5>
+            <RecipesList recipes={recipes} />
+          </section>
         </main>
       </Layout>
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export const query = graphql`
+  {
+    allContentfulRecipe(
+      sort: { fields: title, order: ASC }
+      filter: { featured: { eq: true } }
+    ) {
+      nodes {
+        id
+        title
+        cookTime
+        prepTime
+        image {
+          gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+        }
+      }
+    }
+  }
+`;
+
+export default Contact;
