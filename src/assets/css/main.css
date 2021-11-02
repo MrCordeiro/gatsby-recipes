@@ -610,6 +610,7 @@ form > *:last-child {
   color: var(--grey-800);
   margin-top: 0.5rem;
 }
+
 @media screen and (min-width: 576px) {
   .recipes-list {
     grid-template-columns: 1fr 1fr;
@@ -786,4 +787,13 @@ form > *:last-child {
   padding-bottom: 0.75rem;
   color: var(--primary-500);
   text-transform: capitalize;
+}
+
+.recipe-content {
+  counter-reset: step;
+}
+
+.single-instruction p.step::after {
+  counter-increment: step;
+  content: counter(step);
 }

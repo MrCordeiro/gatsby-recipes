@@ -1,16 +1,16 @@
 import React from "react";
-//import setupTags from "../utils/setupTags";
+import setupTags from "../utils/setupTags";
 import { Link } from "gatsby";
 import slugify from "slugify";
 
 const TagsList = ({ recipes }) => {
-  //const newTags = setupTags(recipes);
+  const tags = setupTags(recipes);
 
   return (
     <div className="tag-container">
-      <h4>recipes</h4>
+      <h4>Recipes</h4>
       <div className="tags-list">
-        {/* {newTags.map((tag, index) => {
+        {tags.map((tag, index) => {
           const [text, value] = tag;
           const slug = slugify(text, { lower: true });
 
@@ -19,7 +19,7 @@ const TagsList = ({ recipes }) => {
               {text} ({value})
             </Link>
           );
-        })} */}
+        })} 
       </div>
     </div>
   );
