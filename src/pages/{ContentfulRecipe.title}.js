@@ -13,7 +13,7 @@ const options = {
     [BLOCKS.LIST_ITEM]: (node, children) => (
       <div className="single-instruction">
         <header>
-          <p class="step">step </p>
+          <p class="step">passo </p>
           <div></div>
         </header>
         {children}
@@ -92,7 +92,7 @@ const RecipeTemplate = ({ data }) => {
             </article>
             <article className="second-column">
               <div>
-                <h4>ingredients</h4>
+                <h4>ingredientes</h4>
                 {ingredients.map((item, index) => {
                   return (
                     <p key={index} className="single-ingredient">
@@ -102,7 +102,7 @@ const RecipeTemplate = ({ data }) => {
                 })}
               </div>
               <div>
-                <h4>tools</h4>
+                <h4>equipamentos</h4>
                 {tools.map((item, index) => {
                   return (
                     <p key={index} className="single-tool">

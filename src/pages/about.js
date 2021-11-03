@@ -36,7 +36,7 @@ const About = ({
           />
         </section>
         <section className="featured-recipes">
-          <h5>Look at this Awesomesouce!</h5>
+          <h5>Olha que belezura!</h5>
           <RecipesList recipes={recipes} />
         </section>
       </main>
