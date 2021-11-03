@@ -5,6 +5,7 @@ import { BLOCKS } from "@contentful/rich-text-types";
 import { renderRichText } from "gatsby-source-contentful/rich-text";
 import { BsClockHistory, BsClock, BsPeople } from "react-icons/bs";
 import Layout from "../components/Layout";
+import Seo from "../components/Seo";
 import slugify from "slugify";
 
 const options = {
@@ -38,6 +39,7 @@ const RecipeTemplate = ({ data }) => {
 
   return (
     <Layout>
+      <Seo title={title} description={description} />
       <main className="page">
         <div className="recipe-page">
           {/* hero */}

@@ -1,12 +1,14 @@
-import React from "react"
-import AllRecipes from "../components/AllRecipes"
-import Layout from "../components/Layout"
-import { StaticImage } from "gatsby-plugin-image"
+import React from "react";
+import AllRecipes from "../components/AllRecipes";
+import Layout from "../components/Layout";
+import Seo from "../components/Seo";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function Home() {
   return (
     <>
       <Layout>
+        <Seo title="Home" />
         <main className="page">
           <header className="hero">
             <StaticImage
@@ -23,9 +25,9 @@ export default function Home() {
               </div>
             </div>
           </header>
-          <AllRecipes/>
+          <AllRecipes />
         </main>
       </Layout>
     </>
-  )
+  );
 }
